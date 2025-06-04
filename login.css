@@ -1,0 +1,98 @@
+/* Login Page */
+.login{
+    justify-content: center;
+    text-align: center;
+}
+main {
+    margin-top: 100px;
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+input[type="text"], input[type="password"] ,input[type="capcha"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+.Random{
+  height: 50px;
+  width: 50%;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 100px;
+  margin-bottom: 10px;
+  border: black;
+  border: 2px solid black;
+
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 400px;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    gap: 130px;
+    flex-wrap: wrap;
+  }
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  
+  body {
+    animation: fadeIn 1s ease-in;
+  }
+  .link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1877F2; /* Facebook Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link:hover {
+    background-color: #0e5a9c; /* Darker shade on hover */
+  }
+  
+  /* X (Twitter) button styling */
+  .link:nth-child(2) {
+    background-color: black;
+  }
+  
+  .link:nth-child(2):hover {
+    background-color: gray;
+  }

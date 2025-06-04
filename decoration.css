@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+body {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 80px; /* Adjust based on header height */
+}
+.dot{
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.main {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+header {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Adjust as needed */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensures it stays above other elements */}
+
+/* Add margin to body content to avoid overlap with fixed header */
+
+.name{
+  margin-top: 15px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.web {
+  font-size: 35px;
+  font-weight: bold;
+  padding: 5px; /* Optional: Adds space between the text and the border */
+  text-align: center; /* Optional: Centers the text */
+  color: rgb(68, 214, 28);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  margin-right: 40px;
+  font-size: 18px;
+}
+/* Change font color on hover */
+nav ul li a:hover {
+  color: rgb(134, 139, 134); /* Change this to any color you like */
+  transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  gap: 50px;
+}
+
+.profile img {
+  margin-top: 150px;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #ccc;
+  flex-shrink: 0;
+}
+
+.info {
+  margin-top: 100px;
+  text-align: left;
+    max-width: 500px;
+}
+
+.info h1 {
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.info h3 {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.info p {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.buttons .btn {
+  margin-top: 50px;
+  display: inline-block;
+  padding: 20px;
+  border-radius: 50%; /* Makes the buttons round */
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size:22px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  width: 130px; /* Adjust size */
+  height: 130px; /* Adjust size */
+  line-height: 90px; /* Centers text vertically */
+  margin-right: 20px;
+  border:  0.5px solid #050e18;
+  cursor: pointer;
+  
+}
+
+.yellow {
+  background-color: rgba(255, 225, 0, 0.929);
+}
+
+.red {
+  background-color: rgb(246, 83, 7);
+}
+
+.blue {
+  background-color: rgb(81, 220, 255);
+}
+
+.buttons .btn:hover {
+  background-color: white;
+  color: black; /* Changes text color to black on hover */
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  margin-top: 400px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  gap: 130px;
+  flex-wrap: wrap;
+}
+.login {
+  width: 25px; /* Adjust logo size */
+  height: 25px; /* Adjust logo size */
+  margin-right: 8px; /* Space between logo and text */
+  vertical-align: middle; /* Align logo with text */
+}
+
+/* Add this to your CSS */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 1s ease-in;
+}
+/* Button hover animation */
+.buttons .btn:hover {
+  transform: scale(1.1); /* Slight zoom-in effect */
+  background-color: #ffffff; /* Change background color */
+}
+/* Text slide-in animation */
+@keyframes slideIn {
+  from {
+      transform: translateX(-100%);
+  }
+  to {
+      transform: translateX(0);
+  }
+}
+
+.hi {
+  animation: slideIn 1.5s ease-out;
+}
+.link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1877F2; /* Facebook Blue */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.link:hover {
+  background-color: #0e5a9c; /* Darker shade on hover */
+}
+
+/* X (Twitter) button styling */
+.link:nth-child(2) {
+  background-color: black;
+}
+
+.link:nth-child(2):hover {
+  background-color: gray;
+}
+
+nav {
+  display: flex; /* Use flexbox to align items */
+  justify-content: flex-start; /* Align items to the left */
+  align-items: center; /* Vertically center the items */
+}
+
+.nav-item {
+  position: relative;
+  margin-right: 60px; /* Space between items */
+}
+
+.nav-item a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  font-size: 20px;
+  color: black;
+  border-radius: 5px;
+}
+
+/* Dropdown menu container */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;  /* Ensures it appears directly below */
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 120px; /* Ensure dropdown menu stays wide enough */
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Styling for the links inside the dropdown */
+.dropdown-menu a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+  background: #f4f4f4;
+  border-radius: 3px;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu a:hover {
+  background: #ddd;
+}
+
+/* Remove margin from last item */
+nav .nav-item:last-child {
+  margin-right: 0;
+}
